@@ -3,16 +3,11 @@ spring:
     name: juha-backend
   jpa:
     hibernate:
-      ddl-auto: update
-  datasource:
-    url: jdbc:mysql://localhost:3306/juha_car?verifyServerCertificate=false&useSSL=true
-    username: dev
-    password: 
+      ddl-auto: update  
   data:
     rest:
-      base-path: /api  
+      base-path: /api
+  datasource:
+    tomcat:
+      max-active: 10  
     
-server:
-  port: 8082
-  tomcat:
-    max-threads: 100
