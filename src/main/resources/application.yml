@@ -1,13 +1,7 @@
 spring:
-  application:
-    name: juha-backend
-  jpa:
-    hibernate:
-      ddl-auto: update  
-  data:
-    rest:
-      base-path: /api
-  datasource:
-    tomcat:
-      max-active: 10  
+  profiles:
+    active:
+    - dev
+      
+        
     

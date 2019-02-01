@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: juha-backend
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:    
+    tomcat:
+      max-active: 10    
+  data:
+    rest:
+      base-path: /api  
+    
