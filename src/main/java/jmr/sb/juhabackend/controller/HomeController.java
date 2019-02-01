@@ -21,6 +21,12 @@ public class HomeController
 	@Autowired
 	private OwnerRepository ownerRepository;
 	
+	@GetMapping("/hello")
+	public String hello()
+	{
+		return "hello from juha-backend";
+	}
+	
 	@GetMapping("/cars")
 	public Iterable<Car> getCars()
 	{
